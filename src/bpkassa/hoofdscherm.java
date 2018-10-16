@@ -84,6 +84,9 @@ public class hoofdscherm extends javax.swing.JFrame {
         btnKorting = new javax.swing.JButton();
         txtPrijs = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("JIM'S BAR KASSA");
@@ -158,6 +161,18 @@ public class hoofdscherm extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel1.setText("PRIJS TOT NU TOE:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, 380, 140));
+
+        jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
+        jLabel2.setText("JIM'S BAR");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 0, 370, 360));
+
+        jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
+        jLabel3.setText("WELKOM ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, -90, 370, 360));
+
+        jLabel4.setFont(new java.awt.Font("Brush Script MT", 1, 36)); // NOI18N
+        jLabel4.setText("BIJ");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, -50, 370, 360));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -235,6 +250,9 @@ public class hoofdscherm extends javax.swing.JFrame {
     private javax.swing.JButton btnScotch;
     private javax.swing.JButton btnVodka;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JTextField txtPrijs;
     // End of variables declaration//GEN-END:variables
 }
