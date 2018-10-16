@@ -87,13 +87,23 @@ public class hoofdscherm extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("JIM'S BAR KASSA");
+        setBackground(new java.awt.Color(0, 153, 153));
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
-        setMinimumSize(new java.awt.Dimension(1120, 500));
+        setMinimumSize(new java.awt.Dimension(1120, 750));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        btnMargarita.setBackground(new java.awt.Color(51, 102, 255));
+        btnMargarita.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnMargarita.setForeground(new java.awt.Color(51, 255, 51));
         btnMargarita.setText("Margarita");
         btnMargarita.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,6 +112,9 @@ public class hoofdscherm extends javax.swing.JFrame {
         });
         getContentPane().add(btnMargarita, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 180, 100));
 
+        btnMojito.setBackground(new java.awt.Color(51, 102, 255));
+        btnMojito.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnMojito.setForeground(new java.awt.Color(51, 255, 51));
         btnMojito.setText("Mojito");
         btnMojito.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,6 +123,9 @@ public class hoofdscherm extends javax.swing.JFrame {
         });
         getContentPane().add(btnMojito, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 180, 100));
 
+        btnBloody.setBackground(new java.awt.Color(51, 102, 255));
+        btnBloody.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnBloody.setForeground(new java.awt.Color(51, 255, 51));
         btnBloody.setText("Bloody Mary");
         btnBloody.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,6 +134,9 @@ public class hoofdscherm extends javax.swing.JFrame {
         });
         getContentPane().add(btnBloody, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 180, 100));
 
+        btnScotch.setBackground(new java.awt.Color(51, 102, 255));
+        btnScotch.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnScotch.setForeground(new java.awt.Color(51, 255, 51));
         btnScotch.setText("Scotch ");
         btnScotch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -126,6 +145,9 @@ public class hoofdscherm extends javax.swing.JFrame {
         });
         getContentPane().add(btnScotch, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 180, 100));
 
+        btnVodka.setBackground(new java.awt.Color(51, 102, 255));
+        btnVodka.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnVodka.setForeground(new java.awt.Color(51, 255, 51));
         btnVodka.setText("Vodka");
         btnVodka.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,6 +156,9 @@ public class hoofdscherm extends javax.swing.JFrame {
         });
         getContentPane().add(btnVodka, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 180, 110));
 
+        btnBier.setBackground(new java.awt.Color(51, 102, 255));
+        btnBier.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnBier.setForeground(new java.awt.Color(51, 255, 51));
         btnBier.setText("Bier");
         btnBier.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,13 +175,13 @@ public class hoofdscherm extends javax.swing.JFrame {
                 btnKortingActionPerformed(evt);
             }
         });
-        getContentPane().add(btnKorting, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 280, 340, 60));
+        getContentPane().add(btnKorting, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 200, 340, 60));
 
         txtPrijs.setEditable(false);
         txtPrijs.setBackground(new java.awt.Color(0, 0, 0));
         txtPrijs.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         txtPrijs.setForeground(new java.awt.Color(0, 204, 102));
-        getContentPane().add(txtPrijs, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 140, 340, 90));
+        getContentPane().add(txtPrijs, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 100, 340, 90));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel1.setText("PRIJS TOT NU TOE:");
@@ -164,7 +189,7 @@ public class hoofdscherm extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
         jLabel2.setText("JIM'S BAR");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 0, 370, 360));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 10, 370, 360));
 
         jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
         jLabel3.setText("WELKOM ");
@@ -173,6 +198,23 @@ public class hoofdscherm extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Brush Script MT", 1, 36)); // NOI18N
         jLabel4.setText("BIJ");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, -50, 370, 360));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\587e338e9686194a55adab7e.png")); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-80, 350, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 740, -1, -1));
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\587e33959686194a55adab7f.png")); // NOI18N
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, 350, 430));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\Mojito-PNG-Transparent-Image.png")); // NOI18N
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 350, -1, 530));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\xxl_scotch-whiskey.png")); // NOI18N
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 430, -1, -1));
+
+        jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\Beer_PNG_Clip_Art.png")); // NOI18N
+        jLabel8.setText("jLabel8");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 250, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -250,9 +292,15 @@ public class hoofdscherm extends javax.swing.JFrame {
     private javax.swing.JButton btnScotch;
     private javax.swing.JButton btnVodka;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JTextField txtPrijs;
     // End of variables declaration//GEN-END:variables
 }
