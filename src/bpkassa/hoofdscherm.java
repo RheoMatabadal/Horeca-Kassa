@@ -86,6 +86,10 @@ public class hoofdscherm extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("JIM'S BAR KASSA");
+        setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setMinimumSize(new java.awt.Dimension(1120, 500));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnMargarita.setText("Margarita");
         btnMargarita.addActionListener(new java.awt.event.ActionListener() {
@@ -93,6 +97,7 @@ public class hoofdscherm extends javax.swing.JFrame {
                 btnMargaritaActionPerformed(evt);
             }
         });
+        getContentPane().add(btnMargarita, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 180, 100));
 
         btnMojito.setText("Mojito");
         btnMojito.addActionListener(new java.awt.event.ActionListener() {
@@ -100,6 +105,7 @@ public class hoofdscherm extends javax.swing.JFrame {
                 btnMojitoActionPerformed(evt);
             }
         });
+        getContentPane().add(btnMojito, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 30, 180, 100));
 
         btnBloody.setText("Bloody Mary");
         btnBloody.addActionListener(new java.awt.event.ActionListener() {
@@ -107,6 +113,7 @@ public class hoofdscherm extends javax.swing.JFrame {
                 btnBloodyActionPerformed(evt);
             }
         });
+        getContentPane().add(btnBloody, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 180, 100));
 
         btnScotch.setText("Scotch ");
         btnScotch.addActionListener(new java.awt.event.ActionListener() {
@@ -114,6 +121,7 @@ public class hoofdscherm extends javax.swing.JFrame {
                 btnScotchActionPerformed(evt);
             }
         });
+        getContentPane().add(btnScotch, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, 180, 100));
 
         btnVodka.setText("Vodka");
         btnVodka.addActionListener(new java.awt.event.ActionListener() {
@@ -121,6 +129,7 @@ public class hoofdscherm extends javax.swing.JFrame {
                 btnVodkaActionPerformed(evt);
             }
         });
+        getContentPane().add(btnVodka, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 180, 110));
 
         btnBier.setText("Bier");
         btnBier.addActionListener(new java.awt.event.ActionListener() {
@@ -128,61 +137,27 @@ public class hoofdscherm extends javax.swing.JFrame {
                 btnBierActionPerformed(evt);
             }
         });
+        getContentPane().add(btnBier, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 250, 180, 110));
 
         btnKorting.setBackground(new java.awt.Color(255, 0, 0));
-        btnKorting.setText("10% korting");
+        btnKorting.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnKorting.setText("10% KORTING");
         btnKorting.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnKortingActionPerformed(evt);
             }
         });
+        getContentPane().add(btnKorting, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 280, 340, 60));
 
-        jLabel1.setText("prijs tot nu toe:");
+        txtPrijs.setEditable(false);
+        txtPrijs.setBackground(new java.awt.Color(0, 0, 0));
+        txtPrijs.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
+        txtPrijs.setForeground(new java.awt.Color(0, 204, 102));
+        getContentPane().add(txtPrijs, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 140, 340, 90));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(75, 75, 75)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(btnBloody, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnMojito, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnMargarita, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnScotch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnVodka, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnBier, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(330, 330, 330)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1)
-                    .addComponent(btnKorting))
-                .addGap(18, 18, 18)
-                .addComponent(txtPrijs, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(429, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(73, 73, 73)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnMargarita)
-                    .addComponent(btnKorting))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnMojito)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtPrijs, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel1)))
-                .addGap(18, 18, 18)
-                .addComponent(btnBloody)
-                .addGap(18, 18, 18)
-                .addComponent(btnScotch)
-                .addGap(18, 18, 18)
-                .addComponent(btnVodka)
-                .addGap(18, 18, 18)
-                .addComponent(btnBier)
-                .addContainerGap(137, Short.MAX_VALUE))
-        );
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        jLabel1.setText("PRIJS TOT NU TOE:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, 380, 140));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
