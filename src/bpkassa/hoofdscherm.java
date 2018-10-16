@@ -93,10 +93,12 @@ public class hoofdscherm extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("JIM'S BAR KASSA");
-        setBackground(new java.awt.Color(0, 153, 153));
+        setAlwaysOnTop(true);
+        setBackground(new java.awt.Color(102, 0, 255));
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setMinimumSize(new java.awt.Dimension(1120, 750));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -175,21 +177,21 @@ public class hoofdscherm extends javax.swing.JFrame {
                 btnKortingActionPerformed(evt);
             }
         });
-        getContentPane().add(btnKorting, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 200, 340, 60));
+        getContentPane().add(btnKorting, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 170, 340, 60));
 
         txtPrijs.setEditable(false);
         txtPrijs.setBackground(new java.awt.Color(0, 0, 0));
         txtPrijs.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
         txtPrijs.setForeground(new java.awt.Color(0, 204, 102));
-        getContentPane().add(txtPrijs, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 100, 340, 90));
+        getContentPane().add(txtPrijs, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 70, 340, 90));
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         jLabel1.setText("PRIJS TOT NU TOE:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, 380, 140));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, -20, 380, 140));
 
         jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
         jLabel2.setText("JIM'S BAR");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 10, 370, 360));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 0, 370, 360));
 
         jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
         jLabel3.setText("WELKOM ");
@@ -207,14 +209,17 @@ public class hoofdscherm extends javax.swing.JFrame {
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 390, 350, 430));
 
         jLabel9.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\Mojito-PNG-Transparent-Image.png")); // NOI18N
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 350, -1, 530));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 330, -1, 530));
 
         jLabel10.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\xxl_scotch-whiskey.png")); // NOI18N
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 430, -1, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\Beer_PNG_Clip_Art.png")); // NOI18N
         jLabel8.setText("jLabel8");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 240, 250, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 240, 250, -1));
+
+        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\vod.png")); // NOI18N
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 550, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -293,6 +298,7 @@ public class hoofdscherm extends javax.swing.JFrame {
     private javax.swing.JButton btnVodka;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

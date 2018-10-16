@@ -29,32 +29,54 @@ public class Bon extends javax.swing.JDialog {
     private void initComponents() {
 
         btnClose = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jLabel5 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("JIM'S BAR KASSA");
+        setMinimumSize(new java.awt.Dimension(800, 580));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnClose.setText("afsluiten");
+        btnClose.setBackground(new java.awt.Color(51, 102, 255));
+        btnClose.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        btnClose.setForeground(new java.awt.Color(102, 255, 102));
+        btnClose.setText("AFSLUITEN");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCloseActionPerformed(evt);
             }
         });
+        getContentPane().add(btnClose, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 220, 50));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(950, Short.MAX_VALUE)
-                .addComponent(btnClose)
-                .addGap(48, 48, 48))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(510, Short.MAX_VALUE)
-                .addComponent(btnClose)
-                .addGap(55, 55, 55))
-        );
+        jLabel2.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
+        jLabel2.setText("JIM'S BAR");
+        jLabel2.setMinimumSize(new java.awt.Dimension(255, 60));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, -50, 370, 360));
+
+        jLabel3.setFont(new java.awt.Font("Brush Script MT", 1, 48)); // NOI18N
+        jLabel3.setText("WELKOM ");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, -150, 370, 360));
+
+        jLabel4.setFont(new java.awt.Font("Brush Script MT", 1, 36)); // NOI18N
+        jLabel4.setText("BIJ");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, -90, 370, 360));
+
+        jTextArea1.setEditable(false);
+        jTextArea1.setBackground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setColumns(20);
+        jTextArea1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jTextArea1.setForeground(new java.awt.Color(0, 255, 0));
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
+
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, 450, 480));
+
+        jLabel5.setIcon(new javax.swing.ImageIcon("C:\\Users\\Rheo\\OneDrive - De Haagse Hogeschool\\HBO ICT\\Programming\\New Folder\\bpKassa\\alcohol-drink-png-2.png")); // NOI18N
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(-40, 0, 500, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -107,5 +129,11 @@ public class Bon extends javax.swing.JDialog {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClose;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
